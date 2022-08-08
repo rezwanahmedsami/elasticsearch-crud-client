@@ -40,6 +40,19 @@ class ElasticsearchCrud {
             return $e->getCode();
         }
     }
+
+    public function updateDocument($params){
+        try {
+            $response = $this->client->update($params);
+            return $response->asArray();
+        } catch (ClientResponseException $e) {
+            return $e;
+        } catch (ServerResponseException $e) {
+            return $e;
+        } catch (Exception $e) {
+            return $e;
+        } 
+    }
 }
 
 ?>

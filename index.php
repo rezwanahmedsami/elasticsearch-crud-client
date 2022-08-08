@@ -33,4 +33,18 @@ print_r($searchDoc);
 // print_r($deleteDoc);
 // delete document
 
+// update document
+// $updateParams = [
+//     "index" => "rezwan_index",
+//     "id" => "w4oafYIBmzYLoKAQBlAK",
+//     "body" => [
+//         "doc" => [
+//             "testField" => "This field is updated"
+//         ]
+//     ]
+//         ];
+// $updateDocument = $ElasticsearchCrud->updateDocument($updateParams);
+// print_r($updateDocument);
+// update document
+
 ?>
