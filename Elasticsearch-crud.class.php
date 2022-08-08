@@ -1,5 +1,5 @@
 <?php
-require './config.php';
+require 'vendor/autoload.php';
 
 use Elastic\Elasticsearch\ClientBuilder;
 use Elastic\Elasticsearch\Exception\ClientResponseException;
